@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Capa_1" style="enable-background:new 0 0 56 56;" x="0px" y="0px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Allerta:400);</style>
+  </defs>
+  <path style="fill:#E9E9E0;" d="M 36.985 0 L 7.963 0 C 7.155 0 6.5 0.655 6.5 1.926 L 6.5 55 C 6.5 55.345 7.155 56 7.963 56 L 48.037 56 C 48.845 56 49.5 55.345 49.5 55 L 49.5 12.978 C 49.5 12.282 49.407 12.058 49.243 11.893 L 37.607 0.257 C 37.442 0.093 37.218 0 36.985 0 Z"/>
+  <polygon style="fill:#D9D7CA;" points="37.5 0.151 37.5 12 49.349 12"/>
+  <path d="M 48.037 56 L 7.963 56 C 7.155 56 6.5 55.345 6.5 54.537 L 6.5 39 L 49.5 39 L 49.5 54.537 C 49.5 55.345 48.845 56 48.037 56 Z" style="fill: rgb(230, 96, 0);"/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <text x="21.414" y="53.072" style="fill: rgb(255, 255, 255); font-family: Allerta; font-size: 14px; white-space: pre;">JS</text>
+  <rect x="15.011" y="24.254" width="25.979" height="1.269" style="fill: rgb(237, 131, 18);"/>
+  <rect x="14.286" y="12.171" width="25.979" height="1.269" style="fill: rgb(237, 131, 18);" transform="matrix(1, 0, 0, 1.000001, 0.7245, 21.23605)"/>
+  <rect x="15.011" y="28.876" width="25.979" height="1.269" style="fill: rgb(237, 131, 18);"/>
+  <rect x="15.071" y="19.512" width="25.979" height="1.269" style="fill: rgb(237, 131, 18);"/>
+  <rect x="14.95" y="14.618" width="25.979" height="1.269" style="fill: rgb(237, 131, 18);"/>
+</svg>
