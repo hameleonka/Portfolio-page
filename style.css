@@ -1,6 +1,7 @@
 body {
     background: #E6E6E6 url('img/bg-texture.png') 0 0 repeat;
     font-family: 'Menlo Regular', monospace;
+    position: relative;
 }
 
 @font-face {
@@ -8,6 +9,42 @@ body {
     font-style: normal;
     font-weight: normal;
     src: local('Menlo Regular'), url('fonts/Menlo-Regular.woff') format('woff');
+}
+
+.navbar-default {
+    background-color: #293952;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #c9d4da;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #c9d4da;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #62e364;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #c9d4da;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:#c9d4da;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color:  #293952;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
 }
 
 a:hover {
@@ -177,6 +214,7 @@ header .intro {
 
 #portfolio .thumbnail:hover {
     transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
 }
 
 #portfolio .thumbnail .caption {
@@ -245,6 +283,8 @@ footer .icon-contact:hover {
     box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
+
+
 @media (max-width: 1200px){
     .speech-bubble {
         font-size: 20px;
@@ -261,20 +301,21 @@ footer .icon-contact:hover {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
+    .navbar-custom {
+        padding: 0;
+    }
+
+    header .container.banner {
+        padding-top: 50px;
+    }
+
     .speech-bubble {
         font-size: 16px;
     }
 }
 
 @media (max-width: 580px) {
-    .navbar-custom {
-        padding: 8px 0;
-    }
-
-    header .container.banner {
-        padding-top: 65px;
-    }
 
     h1, .h1 {
         font-size: 30px;
@@ -326,15 +367,8 @@ footer .icon-contact:hover {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 428px) {
 
-    .navbar-custom {
-        padding: 5px 0;
-    }
-
-    header .container.banner {
-        padding-top: 65px;
-    }
     .speech-bubble {
         font-size: 12px;
     }
