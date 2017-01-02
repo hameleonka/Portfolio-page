@@ -1,8 +1,7 @@
 body {
-    background: url('img/bg-texture.png') 0 0 repeat;
+    background: #E6E6E6 url('img/bg-texture.png') 0 0 repeat;
     font-family: 'Menlo Regular', monospace;
 }
-
 
 @font-face {
     font-family: 'Menlo Regular';
@@ -11,121 +10,165 @@ body {
     src: local('Menlo Regular'), url('fonts/Menlo-Regular.woff') format('woff');
 }
 
-a:hover {text-decoration:none;}
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-default {
+    border: none;
+}
 
 h1 {
     margin: 1em 0;
 }
 
-/*.navbar-custom {*/
-     /*border: none;*/
-     /*font-family: 'Menlo Regular', monospace;*/
- /*}*/
+.navbar-custom {
+    border: none;
+    font-family: 'Menlo Regular', monospace;
+    padding: 15px 0;
+    transition: padding .3s;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-custom.affix {
+    padding: 0;
+}
 
 header .container.banner {
     padding-top: 70px;
 }
 
 header .intro {
-    /*background-color: #293952;*/
-    font-size: 25px;
-    color:#c9d4da;
+    color: #c9d4da;
 }
 
 .speech-bubble {
     background: #c9d4da;
-    border: #293952 2px solid ;
+    border: #293952 2px solid;
     box-shadow: 5px 9px 4.9px 0.1px rgba(41, 57, 82, 0.75);
     position: relative;
-    padding: 15px;
-    margin: 1em 0 3em;
-    color:#293952;
+    font-size: 25px;
+    padding: 0.6em;
+    margin: 1em 0 2em;
+    color: #293952;
     border-radius: 10px;
 }
 
 .speech-bubble:after {
     content: "";
     position: absolute;
-    top: -20px;
-    right: 50px;
+    top: -0.84em;
+    right: 2.2em;
     border-top: #293952 2px solid;
     border-left: #293952 2px solid;
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 1.52em;
+    height: 1.52em;
     transform: rotate(45deg);
     background: #c9d4da;
 }
 
 #skills.container-fluid {
-    /*background-color:#293952;*/
-    background: url("img/skills_texture.jpg") repeat;
+    background: #696E81 url("img/skills_texture.jpg") repeat;
+    padding-top: 20px;
 }
 
 #skills h1 {
-    color:#c9d4da;
+    color: #c9d4da;
 }
 
-#skills .container{
+#skills .container-fluid {
+    top: 0;
+    left: 0;
+    padding-bottom: 3%;
+    max-width: 1170px;
+}
+
+.icon-skills-container {
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
     position: relative;
-    padding-bottom:43%;
 }
 
 .icon-computer {
     position: absolute;
-    top:52%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 0;
+    padding-top: 20%;
+}
+
+.icon-computer svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .icon-skill {
     position: absolute;
-    height:auto;
     transition: all 1s ease;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    width: 13%;
+    height: 0;
+    padding-top: 13%;
+}
+
+.icon-skill svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .icon-top {
-    top:12%;
-    left:50%;
+    top: 0;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 .icon-right-top {
-    top:22%;
-    left:67%;
+    top: 14%;
+    left: 70%;
 }
 
 .icon-right-bottom {
-    top:60%;
-    left:67%;
+    top: 59%;
+    left: 70%;
 }
 
 .icon-bottom {
-    top:76%;
-    left:50%;
+    top: 78%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 .icon-left-bottom {
-    top:60%;
-    left:16.45%;
+    top: 59%;
+    left: 17%;
 }
 
 .icon-left-top {
-    top:22%;
-    left:16.45%;
+    top: 14%;
+    left: 17%;
 }
 
 #portfolio, #contact {
+    padding-top: 20px;
     padding-bottom: 3%;
 }
 
 #portfolio h1 {
-    color:#293952;
+    color: #293952;
 }
 
 #portfolio .thumbnail {
@@ -139,17 +182,17 @@ header .intro {
 #portfolio .thumbnail .caption {
     padding: 9px;
     background-color: #c9d4da;
-    color:#293952;
+    color: #293952;
     font-size: 16px;
 }
 
 #contact.container-fluid {
-    background: url("img/contact_me3.jpeg") no-repeat;
+    background: #C2C2C2 url("img/contact_me3.jpeg") no-repeat;
     background-size: cover;
 }
 
 #contact h1 {
-    color:#e3e3e3;
+    color: #e3e3e3;
 }
 
 #contact .form-control {
@@ -157,7 +200,7 @@ header .intro {
     border-color: #555;
 }
 
-#contact .form-control:focus  {
+#contact .form-control:focus {
     border-color: #62e364;
     box-shadow: none;
 }
@@ -168,24 +211,22 @@ header .intro {
 
 .btn {
     font-weight: bold;
-    width:30%;
+    width: 30%;
     background: rgba(0, 0, 0, 0.5);
-    color:#e3e3e3;
+    color: #e3e3e3;
 }
 
 footer.container-fluid {
-    color:#c9d4da;
+    color: #c9d4da;
 }
 
-
-
 footer .contact-row {
-    background-color:#293952;
+    background-color: #293952;
     padding-top: 1em;
 }
 
 footer .copyright-row {
-    background-color:#1b2434;
+    background-color: #1b2434;
     padding-top: 1em;
     padding-bottom: 0.5em;
 }
@@ -195,8 +236,8 @@ footer h4 {
 }
 
 footer .icon-contact {
-    width:4em;
-    height:4em;
+    width: 4em;
+    height: 4em;
 }
 
 footer .icon-contact:hover {
@@ -204,7 +245,148 @@ footer .icon-contact:hover {
     box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
+@media (max-width: 1200px){
+    .speech-bubble {
+        font-size: 20px;
+    }
+}
 
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    #portfolio .thumbnail .caption {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px){
+    .speech-bubble {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 580px) {
+    .navbar-custom {
+        padding: 8px 0;
+    }
+
+    header .container.banner {
+        padding-top: 65px;
+    }
+
+    h1, .h1 {
+        font-size: 30px;
+    }
+
+    .icon-computer {
+        display: none;
+    }
+
+    .icon-skill {
+        width: 19%;
+        padding-top: 19%;
+    }
+
+   .icon-right-top {
+        top: 0;
+        left: 70%;
+    }
+
+    .icon-right-bottom {
+        top: 60%;
+        left: 70%;
+    }
+
+    .icon-bottom {
+        top: 60%;
+    }
+
+    .icon-left-bottom {
+        top: 60%;
+        left: 11%;
+    }
+
+    .icon-left-top {
+        top: 0;
+        left: 11%;
+    }
+
+    footer .container {
+        padding: 0;
+    }
+
+    footer .contact-row{
+        font-size: 12px;
+    }
+
+    footer .contact-row h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .navbar-custom {
+        padding: 5px 0;
+    }
+
+    header .container.banner {
+        padding-top: 65px;
+    }
+    .speech-bubble {
+        font-size: 12px;
+    }
+
+    h1, .h1 {
+        font-size: 28px;
+    }
+
+    .icon-skill {
+        width: 21%;
+        padding-top: 21%;
+    }
+
+    .icon-left-bottom,
+    .icon-left-top {
+        left:9%;
+    }
+
+   #portfolio .col-xs-6 {
+        width:85%;
+       float: none;
+       margin: 0 auto;
+    }
+
+    footer .contact-row{
+        font-size: 11px;
+    }
+
+    footer .contact-row h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 385px) {
+
+    footer .contact-row{
+        font-size: 12px;
+    }
+
+    footer .contact-row h4 {
+        font-size: 16px;
+    }
+
+    footer .contact-row .col-xs-7,
+    footer .contact-row  .col-xs-5  {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
 
 
 

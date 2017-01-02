@@ -1,4 +1,4 @@
-var containerSkills= document.querySelector('#skills .container');
+var containerSkills= document.querySelector('#skills .container-fluid');
 var rotationStarted = false;
 var timer;
 
@@ -20,12 +20,12 @@ function debounce(func) {
 }
 
 function checkSlide() {
-    console.log('hi');
-    var windowBottomBorder= (window.scrollY + window.innerHeight);
+    var y = window.scrollY || window.pageYOffset;
+    var windowBottomBorder= (y + window.innerHeight);
     var containerSkillsTopBorder = containerSkills.offsetTop;
     var containerSkillsBottomBorder = containerSkills.offsetTop + containerSkills.clientHeight;
     var containerSkillsIsShown = windowBottomBorder > containerSkillsTopBorder;
-    var containerSkillsScrolledPast = window.scrollY  > containerSkillsBottomBorder;
+    var containerSkillsScrolledPast = y  > containerSkillsBottomBorder;
 
         if (containerSkillsIsShown&&!containerSkillsScrolledPast) {
             if (rotationStarted === false) {
