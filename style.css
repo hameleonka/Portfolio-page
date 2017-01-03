@@ -283,7 +283,25 @@ footer .icon-contact:hover {
     box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    max-width: 365px;
+    margin: 0;
+    transform: translate(-50%, -50%)!important;
+}
 
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal.in {
+    display: block;
+    padding: 0!important;
+}
 
 @media (max-width: 1200px){
     .speech-bubble {
@@ -400,6 +418,10 @@ footer .icon-contact:hover {
     footer .contact-row h4 {
         font-size: 14px;
     }
+
+    .modal-dialog {
+        width: 70%;
+    }
 }
 
 @media (max-width: 385px) {
@@ -419,6 +441,10 @@ footer .icon-contact:hover {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 1em;
+    }
+
+    .modal-dialog {
+        width: 90%;
     }
 }
 
