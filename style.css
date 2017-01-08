@@ -96,10 +96,11 @@ header .intro {
     border-radius: 10px;
 }
 
-.speech-bubble:after {
+.speech-bubble:before {
     content: "";
     position: absolute;
-    top: -0.84em;
+    z-index: 1;
+    top: -0.8em;
     right: 2.2em;
     border-top: #293952 2px solid;
     border-left: #293952 2px solid;
@@ -107,6 +108,18 @@ header .intro {
     width: 1.52em;
     height: 1.52em;
     transform: rotate(45deg);
+    background: #c9d4da;
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -0.5px;
+    right: 1.9em;
+    display: block;
+    width: 2.2em;
+    height: 2px;
     background: #c9d4da;
 }
 
@@ -307,6 +320,9 @@ footer .icon-contact:hover {
     .speech-bubble {
         font-size: 20px;
     }
+    .speech-bubble:after {
+        top: 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -331,12 +347,22 @@ footer .icon-contact:hover {
     .speech-bubble {
         font-size: 16px;
     }
+
+    .speech-bubble:before {
+        top: -0.85em;
+        width: 1.6em;
+        height: 1.6em;
+    }
 }
 
 @media (max-width: 580px) {
 
     h1, .h1 {
         font-size: 30px;
+    }
+
+    .speech-bubble:after {
+        top: 0;
     }
 
     .icon-computer {
@@ -389,6 +415,12 @@ footer .icon-contact:hover {
 
     .speech-bubble {
         font-size: 12px;
+    }
+    .speech-bubble:before {
+        top: -0.9em;
+    }
+    .speech-bubble:after {
+        width: 2.3em;
     }
 
     h1, .h1 {
