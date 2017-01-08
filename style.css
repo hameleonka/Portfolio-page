@@ -398,6 +398,11 @@ footer .icon-contact:hover {
         left: 11%;
     }
 
+    #portfolio .thumbnail:hover {
+        transform: none;
+        -ms-transform: none;
+    }
+
     footer .container {
         padding: 0;
     }
